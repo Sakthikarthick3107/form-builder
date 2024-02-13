@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Poppins;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #343541;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    background-color:black ;
+}
+
+#form{
+    min-height: 90vh;
+    width: 45vw;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0px;
+}
+input{
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    border-radius: 10px ;
+    color: black;
+    font-size: 18px; 
+    border: solid transparent 3px;
+    outline: none;
+}
+label{
+    font-size: 18px;
+}
+
+input:focus{
+    border: solid #19C37D 3px;
+    background-color: rgba(255,255,255,0.8);
+}
+input::placeholder{
+    color: black;
+    font-size: 18px;  
+}
+select{
+    background-color:  rgba(255,255,255,0.5);
+    cursor: pointer; 
+    border: solid transparent 3px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100%;
+    color: black;
+}
+select:focus{
+    border: solid #19C37D 3px;
+    color: black;
+    background-color: rgba(255,255,255,0.8);
+}
+
+option{
+    font-size: 14px;
+    padding: 8px;
+    color: black;
+}
+.row-fields{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin: 5px 0px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5px;
+}
+
+button{
+    color: black;
+    width: 100%;
+    padding: 4px;
+    font-size: 18px;
+}
