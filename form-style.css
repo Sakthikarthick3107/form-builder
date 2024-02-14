@@ -20,11 +20,19 @@ body{
     width: 200px;
     height: 100vh;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
     background-color:black ;
 }
 
+#heading{
+    text-align: center;
+    font-size: 30px;
+    color: #19C37D;
+}
+
 #form{
-    min-height: 90vh;
+    min-height: 80vh;
     width: 45vw;
     background-color: rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
@@ -33,6 +41,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 .input-container{
     display: flex;
@@ -98,9 +107,64 @@ option{
     margin: 0px 5px;
 }
 
-button{
+.createElements{
     color: black;
     width: 100%;
     padding: 4px;
     font-size: 18px;
 }
+input[type=submit]{
+    background-color: #19C37D;
+    color: white;
+    font-size: 18px;
+    margin: 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 3px transparent;
+    transition: ease-in-out 200ms;
+}
+
+input[type=submit]:hover{
+    background-color: #058f56;
+    transform: scale(1.02);
+}
+
+.inputContent{
+    padding: 4px;
+    margin: 10px 0px;
+    width: 90%;
+}
+
+#createForm{
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    padding: 10px;
+    background-color:  #19C37D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: ease-in-out 200ms;
+}
+#createForm:hover{
+    background-color: #058f56;
+    transform: scale(1.02);
+}
+
+
+@media (max-width : 600px){
+    .side-bar{
+        display: none;
+    }
+    #form{
+        width: 80%;
+    }
+    .row-fields{
+        flex-wrap: wrap;
+    }
+    #createForm{
+        display: none;
+    }
+}
+

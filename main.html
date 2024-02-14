@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="form-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="side-bar">
+        <h2>Form Builder</h2>
+        <hr/>
+        <br/>
+        <h4>Text Fields</h4>
+        <br/>
+        <input type="text" id="inputParameter" class="inputContent" placeholder="Label Name"/>
+        <button class="createElements" id="createText" >Add Text</button>
+    </div>
+    <form>
+    <div id="form">
+        <div class="input-container">
+            <h2 id="heading">Course Registration Form</h2>
+        </div>
+        
+
+        <div class="input-container">
+            <label>Name</label>
+            <div class="row-fields">
+            <input type="text" required name="First Name" placeholder="First Name" />
+            <input type="text" required name="Last Name" placeholder="Last Name"/>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label>Email</label>
+            <div class="row-fields">
+                <input required type="email" name="Email" placeholder="Email" />
+            </div>
+        </div>
+        
+        
+
+        <div class="input-container">
+            <label for="Department">Department</label>
+            <select name="Department" required>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="CCE">CCE</option>
+
+            </select>
+        </div>
+            
+        <div class="input-container">
+            <label for="Mobile">Mobile</label>
+            <div class="row-fields">
+                <input type="tel" required name="Mobile" placeholder="Mobile No." />
+            </div>
+        </div>
+            
+        <div class="input-container">
+            <div class="row-fields">
+                <label>Gender : </label>
+                <div class="row">
+                    <input required type="radio" name="Gender" value="Male" checked/>&nbsp;<label>Male</label>
+                </div>
+                <div class="row">
+                    <input required type="radio" name="Gender" value="Female"/>&nbsp;<label>Female</label>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="row-fields">
+                <label for="District">District</label>
+                <select name="District" required>
+                    <option value="chennai">Chennai</option>
+                    <option value="coimbatore">Coimbatore</option>
+                    <option value="madurai">Madurai</option>
+                    <option value="tiruchirappalli">Tiruchirappalli</option>
+                    <option value="salem">Salem</option>
+                    <option value="erode">Erode</option>
+                    <option value="tiruppur">Tiruppur</option>
+                    <option value="vellor">Vellore</option>
+                    <option value="thanjavur">Thanjavur</option>
+                    <option value="dindigul">Dindigul</option>
+                    <option value="tirunelveli">Tirunelveli</option>
+                    <option value="kanchipuram">Kanchipuram</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <div class="row-fields">
+                <label>Courses : </label>
+                <div class="row">
+                    <input  type="checkbox" name="Courses" value="C" />&nbsp;<label>C</label>
+                </div>
+                <div class="row">
+                    <input  type="checkbox" name="Coursed" value="C++"/>&nbsp;<label>C++</label>
+                </div>
+                <div class="row">
+                    <input  type="checkbox" name="Coursed" value="Java"/>&nbsp;<label>Java</label>
+                </div>
+                <div class="row">
+                    <input  type="checkbox" name="Coursed" value="Python"/>&nbsp;<label>Python</label>
+                </div>
+               
+            </div>
+
+            
+        </div>
+        
+    </div>
+    <div class="input-container">
+        <input type="submit" value="Register" />
+    </div>      
+    </form>
+    <button id="createForm">Generate Form</button>
+    <script type="text/javascript" src="form-script.js"></script>
+</body>
+</html>
